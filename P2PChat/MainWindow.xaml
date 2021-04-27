@@ -1,0 +1,26 @@
+﻿<Window x:Name="formMain" x:Class="P2PChat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P2PChat"
+        mc:Ignorable="d"
+        Title="Chat" Height="310" Width="590" Closing="formMain_Closing" Icon="4202087logoodnoklassnikisocialsocialmedia-115601_115700.ico" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="521*"/>
+            <ColumnDefinition Width="63*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btnConnect" Content="Подключиться" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Width="120" Height="24" Click="btnConnect_Click"/>
+        <ComboBox x:Name="cmboxUserIP" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmboxUserIP_SelectionChanged"/>
+        <Button x:Name="btnSend" Content="Отправить" HorizontalAlignment="Left" Margin="4,241,0,0" VerticalAlignment="Top" Width="127" Height="28" Click="btnSend_Click"/>
+        <TextBox x:Name="txtbxMessage" HorizontalAlignment="Left" Height="28" Margin="140,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="434" Grid.ColumnSpan="2" />
+        <TextBox x:Name="txtboxChatWindow" HorizontalAlignment="Left" Height="228" Margin="140,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="434" ScrollViewer.VerticalScrollBarVisibility = "Auto" IsReadOnly="True" ScrollViewer.CanContentScroll="True" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txtbxLogin" HorizontalAlignment="Left" Height="23" Margin="10,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbLogin" Content="Логин:" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="LbIP" Content="IP:" HorizontalAlignment="Left" Margin="10,9,0,0" VerticalAlignment="Top"/>
+        <Border x:Name="Border_Login" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="96" Margin="4,83,0,0" VerticalAlignment="Top" Width="131"/>
+        <Border x:Name="Border_IP" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="60" Margin="4,9,0,0" VerticalAlignment="Top" Width="131"/>
+
+    </Grid>
+</Window>
